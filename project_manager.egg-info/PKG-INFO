@@ -1,0 +1,11 @@
+Metadata-Version: 2.4
+Name: project_manager
+Version: 0.1.0
+Summary: A simple project management Flask application.
+Author-email: AI Agent <ai@example.com>
+Requires-Python: >=3.7
+Requires-Dist: flask
+Requires-Dist: click
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-flask; extra == "test"

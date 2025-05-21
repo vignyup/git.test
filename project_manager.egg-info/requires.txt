@@ -1,0 +1,6 @@
+flask
+click
+
+[test]
+pytest
+pytest-flask

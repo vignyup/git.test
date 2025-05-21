@@ -1,0 +1,21 @@
+[project]
+name = "project_manager"
+version = "0.1.0"
+authors = [
+    {name="AI Agent", email="ai@example.com"},
+]
+description = "A simple project management Flask application."
+requires-python = ">=3.7"
+dependencies = [
+    "flask",
+    "click", # Already a Flask dependency but good to be explicit
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-flask",
+]
+
+[tool.setuptools]
+packages = ["project_manager"]

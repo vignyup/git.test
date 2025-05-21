@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Tasks</h1>
+    <a href="{{ url_for('add_task_route') }}">Add New Task</a>
+    <ul>
+        {% for task in tasks %}
+        <li>
+            <strong>{{ task.title }}</strong> ({{ task.status }})<br>
+            <p>{{ task.description }}</p>
+        </li>
+        {% else %}
+        <li>No tasks yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
